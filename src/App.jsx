@@ -7,7 +7,7 @@ const App = () => {
     useEffect(() => { // UnMounting Logic!!
         setTimeout(() => {
             setLoad(false)
-        } , 2000)
+        } , 1500)
     } , [])
 
     return(
@@ -20,7 +20,14 @@ const App = () => {
 const Loading = () => {
     return(
         <>
-            <h2><i>Loading...</i></h2>
+            <h2 style={{
+                textAlign:"center",
+                padding:20,
+                borderRadius:30,
+                border:"3px solid cyan",
+                backgroundColor:"#636e72",
+                color:'azure'
+            }}><i>Loading...</i></h2>
         </>
     )
 }
@@ -28,7 +35,14 @@ const Loading = () => {
 const Content = () => {
     return (
         <>
-            <h1>Welcome to MyWebsite</h1>
+            <h1 style={{
+                textAlign:"center",
+                borderRadius:30,
+                border:"4px solid black",
+                backgroundColor:'#273c75',
+                color:"white",
+                padding:40,
+            }}>Welcome to MyWebsite</h1>
         </>
     )
 }
